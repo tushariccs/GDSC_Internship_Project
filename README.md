@@ -1,7 +1,7 @@
 
 
 ## Table of contents
-* [General info](#general-info)
+* [General info](#ProjectInformation)
 * [Technologies](#technologies)
 * [Setup](#setup)
 

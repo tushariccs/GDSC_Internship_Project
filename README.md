@@ -33,4 +33,11 @@ If you face issue like UserWarning: FigureCanvasAgg is non-interactive
 * pip install PyQt6 (it solved the issue of displaying of the data visualization from my part) and also add this code import matplotlib
 matplotlib.use('TkAgg')
 
+Installation packages
+```
+pip install Streamlit
+pip install Scikit-learn
+pip install PyQt6 
+```
+![](./static/Figure_1.png)
 

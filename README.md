@@ -42,7 +42,7 @@ pip install Streamlit
 pip install Scikit-learn
 pip install PyQt6 
 ```
-##Images
+## Images
 ![](./static/App.png)
 ![Histogram](./static/Figure_1.png)
 ![Histogram](./static/Figure_2.png)

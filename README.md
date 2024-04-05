@@ -6,7 +6,8 @@
 * [Setup](#setup)
 
 ## Project_Information
-This project is simple Weather Prediction System Web Application
+This project is simple Weather Prediction System Web Application.
+The files like app.py and bmi.py is our learning of streamlit framework you can ignore if you know the streamlit framework basics concepts.
 	
 ## Technologies
 Project is created with:
@@ -39,5 +40,6 @@ pip install Streamlit
 pip install Scikit-learn
 pip install PyQt6 
 ```
+
 ![Histogram](./static/Figure_1.png)
 

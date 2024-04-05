@@ -1,24 +1,36 @@
-#GDSC Project:Weather Prediction System Web Application
+
 
 ## Table of contents
 * [General info](#general-info)
 * [Technologies](#technologies)
 * [Setup](#setup)
 
-## General info
-This project is simple Lorem ipsum dolor generator.
+## Project Information
+This project is simple Weather Prediction System Web Application
 	
 ## Technologies
 Project is created with:
-* Lorem version: 12.3
-* Ipsum version: 2.33
-* Ament library version: 999
+* Python : Python 3.12.0
+* Streamlit Framework : Streamlit, version 1.29.0
+* Machine Learning Model.
 	
 ## Setup
-To run this project, install it locally using npm:
+1] To run this project, firstly create a virtual environment 
+```
+virtualenv env
+```
+It will create an env folder which will allow to install the packages or modules.
 
+2] To activate virtual environment use following command
 ```
-$ cd ../lorem
-$ npm install
-$ npm start
+cd env
+Script\activate
 ```
+3]Install the following packages needed for the project which are as follow:
+* Streamlit-> install pandas,numpy by default so you don't need to install seperately
+* Scikit-learn
+If you face issue like UserWarning: FigureCanvasAgg is non-interactive
+* pip install PyQt6 (it solved the issue of displaying of the data visualization from my part) and also add this code import matplotlib
+matplotlib.use('TkAgg')
+
+

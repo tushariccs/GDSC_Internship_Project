@@ -2,11 +2,11 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import pandas as pd
-import seaborn as sns
-import matplotlib.pyplot as plt
-# import plotly.express as px
-import matplotlib
-matplotlib.use('TkAgg')
+# import seaborn as sns
+# import matplotlib.pyplot as plt
+# # import plotly.express as px
+# import matplotlib
+# matplotlib.use('TkAgg')
 #   
 from sklearn.model_selection import train_test_split
 # from sklearn.ensemble import RandomForestRegressor
@@ -39,20 +39,20 @@ print(df[df['temp_max'] == max(df['temp_max'])])
 print(df.describe())
         
 # Histogram to know the count of maximum temperature
-plt.figure(figsize=(12,6))
-sns.histplot(data = df,x = df.temp_max,kde=True)
-plt.xlabel("Temperature Maximum")
-plt.ylabel("Count")
-plt.grid(True)
-plt.show()
+# plt.figure(figsize=(12,6))
+# sns.histplot(data = df,x = df.temp_max,kde=True)
+# plt.xlabel("Temperature Maximum")
+# plt.ylabel("Count")
+# plt.grid(True)
+# plt.show()
 
-# # #Histogram to know the count of minimum temperature
-plt.figure(figsize=(12,6))
-sns.histplot(data = df,x = df.temp_min,kde=True)
-plt.xlabel("Temperature Minimum")
-plt.ylabel("Count")
-plt.grid(True)
-plt.show()
+# # # #Histogram to know the count of minimum temperature
+# plt.figure(figsize=(12,6))
+# sns.histplot(data = df,x = df.temp_min,kde=True)
+# plt.xlabel("Temperature Minimum")
+# plt.ylabel("Count")
+# plt.grid(True)
+# plt.show()
 
 # date is not in proper format so let's convert it
 
@@ -63,53 +63,52 @@ df['year'] = df['date'].dt.year
 df['month'] = df['date'].dt.month
 
 #Trying to know which year,month and which whether has max temperature
-g = sns.FacetGrid(df,col="year",hue="weather")
-g.map(sns.lineplot, 'month', 'temp_max').add_legend()
-# g.map(sns.scatterplot,'month', 'temp_max').add_legend()
-g.set_axis_labels('Month', 'Max Temperature (°C)')
+# g = sns.FacetGrid(df,col="year",hue="weather")
+# g.map(sns.lineplot, 'month', 'temp_max').add_legend()
+# # g.map(sns.scatterplot,'month', 'temp_max').add_legend()
+# g.set_axis_labels('Month', 'Max Temperature (°C)')
+# plt.show()
 
-plt.show()
+# # #Trying to know which month has max temperature
+# g = sns.FacetGrid(df,col="year")
+# g.map(sns.lineplot, 'month', 'temp_max').add_legend()
+# g.set_axis_labels('Month', 'Max Temperature (°C)')
+# plt.show()
 
-# #Trying to know which month has max temperature
-g = sns.FacetGrid(df,col="year")
-g.map(sns.lineplot, 'month', 'temp_max').add_legend()
-g.set_axis_labels('Month', 'Max Temperature (°C)')
-plt.show()
+# # #Trial
+# g.map(sns.scatterplot,'month', 'temp_max')
+# g.set_axis_labels('Month', 'Max Temperature (°C)')
+# plt.show()
 
-# #Trial
-g.map(sns.scatterplot,'month', 'temp_max')
-g.set_axis_labels('Month', 'Max Temperature (°C)')
-plt.show()
-
-sns.lineplot(data=df,x=df['month'],y=df['temp_max'],hue=df['year'])
-plt.xlabel("Month")
-plt.ylabel("Max-Temperature")
-plt.show()
+# sns.lineplot(data=df,x=df['month'],y=df['temp_max'],hue=df['year'])
+# plt.xlabel("Month")
+# plt.ylabel("Max-Temperature")
+# plt.show()
 
 
-sns.lineplot(data=df,x=df['month'],y=df['temp_min'],hue=df['year'])
-plt.xlabel("Month")
-plt.ylabel("Max-Temperature")
-plt.show()
+# sns.lineplot(data=df,x=df['month'],y=df['temp_min'],hue=df['year'])
+# plt.xlabel("Month")
+# plt.ylabel("Max-Temperature")
+# plt.show()
 
-sns.scatterplot(data=df,x=df['month'],y=df['precipitation'],hue=df['weather'])
-plt.xlabel("Month")
-plt.ylabel("precipitation")
-plt.show()
+# sns.scatterplot(data=df,x=df['month'],y=df['precipitation'],hue=df['weather'])
+# plt.xlabel("Month")
+# plt.ylabel("precipitation")
+# plt.show()
 
-sns.scatterplot(data=df,x=df['month'],y=df['precipitation'],hue=df['weather'])
-plt.xlabel("Month")
-plt.ylabel("precipitation")
-plt.show()
+# sns.scatterplot(data=df,x=df['month'],y=df['precipitation'],hue=df['weather'])
+# plt.xlabel("Month")
+# plt.ylabel("precipitation")
+# plt.show()
 
-sns.countplot(data = df,x=df['weather'])
-plt.xlabel("Weather")
-plt.ylabel("Count")
-plt.show()
+# sns.countplot(data = df,x=df['weather'])
+# plt.xlabel("Weather")
+# plt.ylabel("Count")
+# plt.show()
 
-plt.pie(x=df['weather'].value_counts(),autopct='%1.1f',labels=df['weather'].value_counts().index)
-plt.title('Distribution of Weather Types')
-plt.show()
+# plt.pie(x=df['weather'].value_counts(),autopct='%1.1f',labels=df['weather'].value_counts().index)
+# plt.title('Distribution of Weather Types')
+# plt.show()
 
 # There is no neccessity of month and year
 #0-> index,1->column

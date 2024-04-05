@@ -41,5 +41,5 @@ pip install Scikit-learn
 pip install PyQt6 
 ```
 ![](./static/App.png)
-![Histogram](./static/Figure_1.png,width=50%)
+![Histogram](./static/Figure_1.png {width=200px})
 

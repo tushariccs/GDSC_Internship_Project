@@ -1,11 +1,11 @@
 
 
 ## Table of contents
-* [General info](#ProjectInformation)
+* [General info](#Project_Information)
 * [Technologies](#technologies)
 * [Setup](#setup)
 
-## Project Information
+## Project_Information
 This project is simple Weather Prediction System Web Application
 	
 ## Technologies

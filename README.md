@@ -51,3 +51,7 @@ pip install PyQt6
 ![Histogram](./static/Figure_8.png)
 ![Histogram](./static/Figure_9.png)
 ![Histogram](./static/Figure_10.png)
+
+##Source
+A project to be done with team mates.
+Streamlit official website has great docs.

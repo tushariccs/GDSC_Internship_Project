@@ -4,6 +4,8 @@
 * [Project Information](#Project_Information)
 * [Technologies](#technologies)
 * [Setup](#setup)
+* [Project_Images](#Images)
+* [Sources](#Sources)
 
 ## Project_Information
 This project is simple Weather Prediction System Web Application.
@@ -40,6 +42,7 @@ pip install Streamlit
 pip install Scikit-learn
 pip install PyQt6 
 ```
+##Images
 ![](./static/App.png)
 ![Histogram](./static/Figure_1.png)
 ![Histogram](./static/Figure_2.png)
@@ -52,6 +55,6 @@ pip install PyQt6
 ![Histogram](./static/Figure_9.png)
 ![Histogram](./static/Figure_10.png)
 
-##Source
+## Source
 A project to be done with team mates.
 Streamlit official website has great docs.

@@ -41,5 +41,13 @@ pip install Scikit-learn
 pip install PyQt6 
 ```
 ![](./static/App.png)
-![Histogram](./static/Figure_1.png | width=100)
-
+![Histogram](./static/Figure_1.png)
+![Histogram](./static/Figure_2.png)
+![Histogram](./static/Figure_3.png)
+![Histogram](./static/Figure_4.png)
+![Histogram](./static/Figure_5.png)
+![Histogram](./static/Figure_6.png)
+![Histogram](./static/Figure_7.png)
+![Histogram](./static/Figure_8.png)
+![Histogram](./static/Figure_9.png)
+![Histogram](./static/Figure_10.png)

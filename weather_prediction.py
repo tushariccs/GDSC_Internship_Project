@@ -1,15 +1,6 @@
 import streamlit as st
 import pandas as pd
-import numpy as np
-import pandas as pd
-# import seaborn as sns
-# import matplotlib.pyplot as plt
-# # import plotly.express as px
-# import matplotlib
-# matplotlib.use('TkAgg')
-#   
 from sklearn.model_selection import train_test_split
-# from sklearn.ensemble import RandomForestRegressor
 from sklearn.naive_bayes import GaussianNB
 from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
 from sklearn.preprocessing import LabelEncoder

@@ -39,5 +39,5 @@ pip install Streamlit
 pip install Scikit-learn
 pip install PyQt6 
 ```
-![](./static/Figure_1.png)
+![Histogram](./static/Figure_1.png)
 
